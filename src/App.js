@@ -1,6 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as firebase from "firebase";
+
+const firebaseConfig = {
+  //apiKey: "api-key",
+  //authDomain: "alvarezaaronai.firebaseapp.com",
+  databaseURL: "https://alvarezaaronai.firebaseio.com/",
+  projectId: "alvarezaaronai",
+  storageBucket: "alvarezaaronai.appspot.com",
+  //messagingSenderId: "sender-id",
+  //appId: "app-id",
+  //measurementId: "G-measurement-id",
+};
+firebase.initializeApp(firebaseConfig);
 
 function App() {
   return (
